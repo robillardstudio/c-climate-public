@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+#
+
+cd "$(dirname "$0")"
+
+clear
+
+echo "CRITICAL CLIMATE MACHINE"
+echo "~"
+echo "~"
+echo "~"
+echo "~"
+echo "~"
+echo "~"
+echo "~"
+echo "~"
+echo "~"
+echo "~"
+echo "~"
+echo -n "Server will begin in 10s ..."
+
+sleep 120
+
+while :
+do
+    # Launch the wavematrix server
+    python3 /home/pi/c-climate/machine_learning/server.py
+done
