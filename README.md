@@ -4,10 +4,8 @@
 
 Critical Climate Machine – Installation Repository
 
-Gaëtan Robillard, 2021.
-
-Conrtibutors: Gaëtan Robillard, Jolan Goulin
-
+Gaëtan Robillard, 2021.  
+Conrtibutors: Gaëtan Robillard, Jolan Goulin  
 With Training set and ML code from Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko (Cards).
 
 --------------------------------------------------------
@@ -73,3 +71,10 @@ A module for creating statistics from the data base:
 
 - number of tweets in the last 24h, according to misinformation label
 - total number of tweets in the data base, according to misinformation label
+
+--------------------------------------------------------
+
+Critical Climate Machine is part of the MediaFutures project. It has received funding from the European Union’s framework Horizon 2020 for
+research and innovation programme under grant agreement No 951962.
+Critical Climate Machine – Patterns of Heat is an artistic research within the framework of the Intelligent Museum Residency, Hertz Lab, ZKM
+Center for Art and Media Karlsruhe.
