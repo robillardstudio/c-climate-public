@@ -11,7 +11,7 @@ With Training set and ML code from Travis G. Coan, Constantine Boussalis, John C
 --------------------------------------------------------
 Coming soon:
 
-- Link for G.Coan et al. repo
+- Link for G. Coan et al. repo
 - Specifications about the modification of code
 - Disclaimer about training dataset
 
