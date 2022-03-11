@@ -9,6 +9,13 @@ Conrtibutors: Gaëtan Robillard, Jolan Goulin
 With Training set and ML code from Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko (Cards).
 
 --------------------------------------------------------
+Coming soon:
+
+- Link for G.Coan et al. repo
+- Specifications about the modification of code
+- Disclaimer about training dataset
+
+--------------------------------------------------------
 
 Three main modules compose the current architecture:
 
