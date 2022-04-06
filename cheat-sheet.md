@@ -12,10 +12,11 @@ Content:
 
 ## Python dependencies
 
-scikit-learn  
-numpy  
-pymongo  
-pymongo[srv]
+* scikit-learn  
+* numpy  
+* pymongo  
+* pymongo[srv]
+* pickle
 
 ## Import export MongoDB
 
