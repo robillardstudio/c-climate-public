@@ -59,7 +59,7 @@ Use `cl_monitor.py` to:
 
 For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 tweets. There are 18 labels ranging from 0 to 17.
 
-![code sheet](media/labels.png)
+![code sheet](media/labels-legend.png)
 
 `server.launch` runs `server.py` at the unit startup. `server.py` receives data and instructions from the main device over wifi network.
 
@@ -80,12 +80,12 @@ Use `scenario.py` to:
 **Network**
 
 `network.py` is used to manage the pi zero network (32 servers) from the command line.
-Possible inputs are: `update`, `halt`, `reboot`
+Possible inputs are: `update`, `halt`, `reboot`.
 
 Requirements
 ------------
 
-Dependencies
+Dependencies (python librairies)
 
 * scikit-learn
 * numpy
