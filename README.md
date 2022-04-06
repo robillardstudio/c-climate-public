@@ -92,13 +92,13 @@ Data
 
 It was decided to publish here the traning data in csv format. The purpose is to allow the training of the model in case the `model.pkl` can't be read because of possible updates of the scikit-learn librairy. Another reason for our choice relies on the fact that the training data is entirely anonymised. Be aware the training data does not include the test set. For accessing the full dataset and learning about its method, please refer to References below. For any claim regarding the publication of the training data in the current repository, please contact gaetanrobillard.studio@gmail.com.
 
-Path : `machine_learning/dataset-training/training.csv`
+Path for accessing the training data : `machine_learning/dataset-training/training.csv`
 
-In `machine_learning`, use `trainExportModel.py`to train the model and export new `.pkl` file.
+To train the model and export new `.pkl` file, use `trainExportModel.py`.
 
 ### Note
 
-Publishing the new twitter datacollected in the Critical Climate Machine framework – in open data framework – is on its way.
+Publishing the new twitter data in the Critical Climate Machine framework – in open data – is on its way.
 
 References / Further Reading
 ----------------------------
