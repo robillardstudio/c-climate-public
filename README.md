@@ -1,4 +1,4 @@
-![installation detail](ccm.jpg)
+![installation detail](media/ccm.jpg)
 
 Critical Climate Machine
 ========================
@@ -22,7 +22,7 @@ Updates
 Description
 -----------
 
-_The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor (pi zero wifi) displaying outputs on a row of 7 segments LED displays (56 digits per row). A main device (pi 4) runs the collection of data from Twitter and reads and writes the data on a Data Base. This repository concerns the code for the data sculpture._
+The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor (pi zero wifi) displaying outputs on a row of 7 segments LED displays (56 digits per row). A main device (pi 4) runs the collection of data from Twitter and reads and writes the data on a Data Base. This repository concerns the code for the data sculpture.
 
 ### Structure
 
@@ -59,7 +59,7 @@ Use `cl_monitor.py` to:
 
 For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 tweets. There are 18 labels ranging from 0 to 17.
 
-![code sheet](labels.jpg)
+![code sheet](media/labels.png)
 
 `server.launch` runs `server.py` at the unit startup. `server.py` receives data and instructions from the main device over wifi network.
 
@@ -102,12 +102,11 @@ Tips
 
 Use [cheat-sheet](cheat-sheet.md) to get few tips for debugging the installation.
 
-Contribute
-----------
+MediaFutures
+--------------
 
-Contributions are very welcome! Clone or fork the repo, then request a pull / merge.
-
-If you find any bugs or suggestions please log them here as well.
+Critical Climate Machine is part of the MediaFutures project. It has received funding from the European Union’s framework Horizon 2020 for
+research and innovation programme under grant agreement No 951962.
 
 The Intelligent Museum
 ----------------------
@@ -119,10 +118,3 @@ The [ZKM | Center for Art and Media](https://zkm.de/en) and the [Deutsches Museu
 As part of the project, digital curating will be critically examined using various approaches of digital art. Experimenting with new digital aesthetics and forms of expression enables new museum experiences and thus new ways of museum communication and visitor participation. The museum is transformed to a place of experience and critical exchange.
 
 ![Logo](media/Logo_ZKM_DMN_KSB.png)
-
---------------------------------------------------------
-
-Critical Climate Machine is part of the MediaFutures project. It has received funding from the European Union’s framework Horizon 2020 for
-research and innovation programme under grant agreement No 951962.
-Critical Climate Machine – Patterns of Heat is an artistic research within the framework of the Intelligent Museum Residency, Hertz Lab, ZKM
-Center for Art and Media Karlsruhe.
