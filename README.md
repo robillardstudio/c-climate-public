@@ -77,7 +77,9 @@ Use `scenario.py` to:
 - create a list of 32 sub lists of 28 tweets
 - distribute each sublist to 32 IPs, via OSC protocol
 
-**`network.py` is used to manage the pi zero network (32 servers) from the command line.**
+**Network**
+
+`network.py` is used to manage the pi zero network (32 servers) from the command line.
 Possible inputs are: `update`, `halt`, `reboot`
 
 Other
