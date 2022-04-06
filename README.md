@@ -1,13 +1,13 @@
-# CRITICAL CLIMATE MACHINE
-
 ![installation detail](ccm.jpg)
 
-Critical Climate Machine – Installation Repository
+# Critical Climate Machine
 
-Gaëtan Robillard, 2021.  
+Gaëtan Robillard, Installation Repository, 2022.
+
 Conrtibutors: Gaëtan Robillard, Jolan Goulin
 
-Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", Sci Rep 11, 22320, Nature, 2021. [https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4).
+Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", _Sci Rep 11_, 22320, Nature, 2021.  
+[https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4).
 
 --------------------------------------------------------
 
