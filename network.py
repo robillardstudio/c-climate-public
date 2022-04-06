@@ -1,4 +1,6 @@
 # NETWORK MANAGEMENT
+# The following code enables the update, halt or reboot of 32 units
+# of the installation
 # ----------------------------------------------------------------------
 
 import argparse
