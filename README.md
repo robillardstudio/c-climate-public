@@ -110,6 +110,8 @@ MediaFutures
 Critical Climate Machine is part of the MediaFutures project. It has received funding from the European Union’s framework Horizon 2020 for
 research and innovation programme under grant agreement No 951962.
 
+![logos](media/logos-mediafutures-eu.png)
+
 The Intelligent Museum
 ----------------------
 
