@@ -4,7 +4,7 @@
 
 Gaëtan Robillard, installation repository, 2022.
 
-Critical Climate Machine is a research based project that quantifies and reveals the mechanisms of online misinformation about global warming. The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor connected to a row of 7 segments LED displays (56 units per row). This repository concerns the code for the data sculpture and the visualization, which itself is dipslaye on a HD screen.
+Critical Climate Machine is a research based project that quantifies and reveals the mechanisms of online misinformation about global warming. The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor connected to a row of 7 segments LED displays (56 units per row). This repository concerns the code for the data sculpture and the visualization, which itself is dipslayed on a HD screen.
 
 This code has been developed by Gaëtan Robillard and Jolan Goulin, as part of the project [MediaFutures](#mediafutures) and [»The Intelligent Museum«, ZKM](#the-intelligent-museum).
 
