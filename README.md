@@ -59,6 +59,8 @@ Use `cl_monitor.py` to:
 
 For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 tweets. There are 18 labels ranging from 0 to 17.
 
+Warning: the text below is clearly identified in the realm of cognitive sciences as known misleading claims about climate change. It should be recalled here that **97% of climate experts agree humans are causing global warming.**
+
 ![code sheet](media/labels-legend.png)
 
 `server.launch` runs `server.py` at the unit startup. `server.py` receives data and instructions from the main device over wifi network.
