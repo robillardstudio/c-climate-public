@@ -103,6 +103,8 @@ Publishing the new twitter data in the Critical Climate Machine framework – in
 References / Further Reading
 ----------------------------
 
+Critical Climate Machine [on vimeo](https://vimeo.com/667971904)
+
 Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", _Sci Rep 11_, 22320, Nature, 2021. [https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4)
 
 Tips
