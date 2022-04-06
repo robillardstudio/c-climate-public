@@ -5,15 +5,15 @@
 Critical Climate Machine – Installation Repository
 
 Gaëtan Robillard, 2021.  
-Conrtibutors: Gaëtan Robillard, Jolan Goulin  
-With Training set and ML code from Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko (Cards).
+Conrtibutors: Gaëtan Robillard, Jolan Goulin
+
+Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", Sci Rep 11, 22320, Nature, 2021. [https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4).
 
 --------------------------------------------------------
-Coming soon:
 
-- Link for G. Coan et al. repo
 - Specifications about the modification of code
 - Disclaimer about training dataset
+- Footers (IM residency and MediaFutures)
 
 --------------------------------------------------------
 
