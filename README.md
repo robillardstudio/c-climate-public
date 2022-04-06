@@ -9,8 +9,6 @@ Critical Climate Machine is a research based project that quantifies and reveals
 
 This code has been developed by Gaëtan Robillard and Jolan Goulin, as part of the project [MediaFutures](#mediafutures) and [»The Intelligent Museum«, ZKM](#the-intelligent-museum).
 
-Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", _Sci Rep 11_, 22320, Nature, 2021. [https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4)
-
 --------------------------------------------------------
 
 Updates
@@ -42,12 +40,12 @@ The scenario and the claim monitor are connected to a mongoDB database.
 
 *Runs on main device*
 
-The module watches Twitter accounts for recent tweets and saves them in the database.
+The module watches Twitter accounts for recent tweets and saves them in the Data Base.
 
 Use `cl_monitor.py` to:
 
 - monitor accounts through Twitter API (Twitter developper account needed)
-- writes collected tweets in the Data Base
+- writes collected tweets in the DB
 - classify most recent tweets from the DB (cf Subroutine)
 - writte the classification output as a new attribute in the DB
 
@@ -84,10 +82,43 @@ Use `scenario.py` to:
 `network.py` is used to manage the pi zero network (32 servers) from the command line.
 Possible inputs are: `update`, `halt`, `reboot`
 
-Other
+Requirements
+------------
+
+Dependencies
+
+* scikit-learn
+* numpy
+* pymongo
+* pymongo[srv]
+
+References / Further Reading
+----------------------------
+
+Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", _Sci Rep 11_, 22320, Nature, 2021. [https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4)
+
+Tips
 -----------
 
-Use [cheat-sheet](cheat-sheet.md) to get few tips for debugging the installation
+Use [cheat-sheet](cheat-sheet.md) to get few tips for debugging the installation.
+
+Contribute
+----------
+
+Contributions are very welcome! Clone or fork the repo, then request a pull / merge.
+
+If you find any bugs or suggestions please log them here as well.
+
+The Intelligent Museum
+----------------------
+
+An artistic-curatorial field of experimentation for deep learning and visitor participation
+
+The [ZKM | Center for Art and Media](https://zkm.de/en) and the [Deutsches Museum Nuremberg](https://www.deutsches-museum.de/en/nuernberg/information/) cooperate with the goal of implementing an AI-supported exhibition. Together with researchers and international artists, new AI-based works of art will be realized during the next four years (2020-2023).  They will be embedded in the AI-supported exhibition in both houses. The Project „The Intelligent Museum” is funded by the Digital Culture Programme of the [Kulturstiftung des Bundes](https://www.kulturstiftung-des-bundes.de/en) (German Federal Cultural Foundation) and funded by the [Beauftragte der Bundesregierung für Kultur und Medien](https://www.bundesregierung.de/breg-de/bundesregierung/staatsministerin-fuer-kultur-und-medien) (Federal Government Commissioner for Culture and the Media).
+
+As part of the project, digital curating will be critically examined using various approaches of digital art. Experimenting with new digital aesthetics and forms of expression enables new museum experiences and thus new ways of museum communication and visitor participation. The museum is transformed to a place of experience and critical exchange.
+
+![Logo](media/Logo_ZKM_DMN_KSB.png)
 
 --------------------------------------------------------
 
