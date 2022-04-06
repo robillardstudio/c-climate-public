@@ -87,7 +87,7 @@ Possible inputs are: `update`, `halt`, `reboot`
 Other
 -----------
 
-Use [cheat-sheet](cheat-sheet.md) to for few tips for debugging the installation
+Use [cheat-sheet](cheat-sheet.md) to get few tips for debugging the installation
 
 --------------------------------------------------------
 
