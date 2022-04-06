@@ -59,7 +59,9 @@ Use `cl_monitor.py` to:
 
 *Runs on each raspberry of the network, i.e. 32 units (pi zero)*
 
-For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 tweets.
+For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 tweets. There are 18 labels ranging from 0 to 17.
+
+![code sheet](labels.jpg)
 
 `server.launch` runs `server.py` at the unit startup. `server.py` receives data and instructions from the main device over wifi network.
 
