@@ -9,16 +9,6 @@ Critical Climate Machine (Patterns of Heat) is a research based project that qua
 
 This code has been developed by Gaëtan Robillard and Jolan Goulin, as part of the project [MediaFutures](#mediafutures) and [»The Intelligent Museum«, ZKM](#the-intelligent-museum).
 
---------------------------------------------------------
-
-Updates
-
-- Specifications about the modification of code
-- Disclaimer about training dataset
-- Footers (IM residency and MediaFutures)
-
---------------------------------------------------------
-
 Description
 -----------
 
@@ -57,7 +47,7 @@ Use `cl_monitor.py` to:
 
 *Runs on each raspberry of the network, i.e. 32 units (pi zero)*
 
-For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 tweets. There are 18 labels ranging from 0 to 17.
+For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 new tweets. There are 18 labels ranging from 0 to 17.
 
 Warning: the text below is clearly identified in the realm of cognitive sciences as known misleading claims about climate change. It should be recalled here that **97% of climate experts agree humans are causing global warming.**
 
@@ -93,6 +83,21 @@ Dependencies (python librairies)
 * numpy
 * pymongo
 * pymongo[srv]
+
+Data
+-------
+
+### Disclaimer
+
+It was decided to publish here the traning data in csv format. The purpose is to allow the training of the model in case the `model.pkl` can't be read because of possible updates of the scikit-learn librairy. Another reason for our choice relies on the fact that the training data is entirely anonymised. Be aware the training data does not include the test set. For accessing the full dataset and learning about its method, please refer to References below. For any claim regarding the publication of the training data in the current repository, please contact gaetanrobillard.studio@gmail.com.
+
+Path : `machine_learning/dataset-training/training.csv`
+
+In `machine_learning`, use `trainExportModel.py`to train the model and export new `.pkl` file.
+
+### Note
+
+Publishing the new twitter data in open data framework is on its way.
 
 References / Further Reading
 ----------------------------
