@@ -24,7 +24,7 @@ Updates
 Description
 -----------
 
-_The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor (pi zero wifi) connected to a row of 7 segments LED displays (56 units per row). A main device (pi 4) runs the collection of data from Twitter and reads and writes the data on a Data Base. This repository concerns the code for the data sculpture._
+_The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor (pi zero wifi) displaying outputs on a row of 7 segments LED displays (56 digits per row). A main device (pi 4) runs the collection of data from Twitter and reads and writes the data on a Data Base. This repository concerns the code for the data sculpture._
 
 ### Structure
 
@@ -61,7 +61,7 @@ Use `cl_monitor.py` to:
 
 For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 tweets.
 
-`server.launch` runs `server.py` at the unit startup. `server.py` receives data and instructions from 
+`server.launch` runs `server.py` at the unit startup. `server.py` receives data and instructions from the main device over wifi network.
 
 See `ml.py` for ML inference and `model.pkl`, the trained model.
 
