@@ -1,6 +1,7 @@
 ![installation detail](ccm.jpg)
 
-# Critical Climate Machine
+Critical Climate Machine
+========================
 
 Gaëtan Robillard, installation repository, 2022.
 
@@ -20,11 +21,18 @@ Updates
 
 --------------------------------------------------------
 
+Description
+-----------
+
+_Detailed project description. Don't forget to include relevant attribution for forked, adapted, or inspired projects._
+
+## Structure
+
 Three main modules compose the current architecture:
 
-1. scenario, on main device
-2. claim monitor, on main device
-3. machine learning, on a network of pi zero devices
+1. `scenario.py, on main device
+2. /claim_monitor, on main device
+3. machine_learning, on a network of pi zero devices
 
 The scenario and the claim monitor are connected to a mongoDB database.
 
