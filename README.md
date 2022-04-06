@@ -98,7 +98,7 @@ In `machine_learning`, use `trainExportModel.py`to train the model and export ne
 
 ### Note
 
-Publishing the new twitter data in open data framework is on its way.
+Publishing the new twitter datacollected in the Critical Climate Machine framework – in open data framework – is on its way.
 
 References / Further Reading
 ----------------------------
