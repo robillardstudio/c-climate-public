@@ -83,6 +83,7 @@ Dependencies (python librairies)
 * numpy
 * pymongo
 * pymongo[srv]
+* pickle
 
 Data
 -------
