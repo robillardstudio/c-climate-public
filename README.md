@@ -2,14 +2,15 @@
 
 # Critical Climate Machine
 
-Gaëtan Robillard, Installation Repository, 2022.
+Gaëtan Robillard, installation repository, 2022.
 
 Conrtibutors: Gaëtan Robillard, Jolan Goulin
 
-Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", _Sci Rep 11_, 22320, Nature, 2021.  
-[https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4).
+Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", _Sci Rep 11_, 22320, Nature, 2021. [https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4).
 
 --------------------------------------------------------
+
+Updates
 
 - Specifications about the modification of code
 - Disclaimer about training dataset
