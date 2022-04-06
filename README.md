@@ -24,7 +24,7 @@ Updates
 Description
 -----------
 
-_The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor (pi zero wifi) connected to a row of 7 segments LED displays (56 units per row). This repository concerns the code for the data sculpture._
+_The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor (pi zero wifi) connected to a row of 7 segments LED displays (56 units per row). A main device (pi 4) runs the collection of data from Twitter and reads and writes the data on a Data Base. This repository concerns the code for the data sculpture._
 
 ### Structure
 
@@ -32,7 +32,7 @@ Three main modules compose the current architecture:
 
 1. `/claim_monitor`, on main device
 2. `/machine_learning`, on a network of pi zero devices
-3. `scenario.py`, on main device (pi4)
+3. `scenario.py`, on main device
 
 The scenario and the claim monitor are connected to a mongoDB database.
 
