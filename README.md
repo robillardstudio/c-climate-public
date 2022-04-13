@@ -12,7 +12,13 @@ This code has been developed by Gaëtan Robillard and Jolan Goulin, as part of t
 Description
 -----------
 
-The project consists of a data sculpture based on machine learning algorithms, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor (pi zero wifi) displaying outputs on a row of 7 segments LED displays (56 digits per row). A main device (pi 4) runs the collection of data from Twitter and reads and writes the data on a Data Base. This repository concerns the code for the data sculpture.
+Critical Climate Machine is examining different states of digital (mis)information about climate change, especially when interpreted by machine learning algorithms. The artistic project takes shape in an installation that presents processed information both in real time, through natural language processing techniques, and in the form of dialogues that were voiced, then regenerated and spatialized, with the help of algorithms designed for music analysis and improvisation.
+
+The set consists of a data sculpture, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor displaying outputs on a row of 7 segments LED displays. A main device collects data from Twitter and reads and writes the data in a Data Base. This repository concerns the code for the data sculpture.
+
+| Role        | Hardware                           |
+| Main device | pi 4                               |
+| One unit    | pi zero wifi, 56 digits LED row    |
 
 ### Structure
 
