@@ -14,16 +14,15 @@ Description
 
 Critical Climate Machine is examining different states of digital (mis)information about climate change, especially when interpreted by machine learning algorithms. The artistic project takes shape in an installation that presents processed information both in real time, through natural language processing techniques, and in the form of dialogues that were voiced, then regenerated and spatialized, with the help of algorithms designed for music analysis and improvisation.
 
-The set consists of a data sculpture, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor displaying outputs on a row of 7 segments LED displays. A main device collects data from Twitter and reads and writes the data in a Data Base. This repository concerns the code for the data sculpture.
+The work consists of a data sculpture, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor displaying outputs on a row of 7 segments LED displays. A main device collects data from Twitter and reads and writes the data in a database (DB). This repository concerns the code for the data sculpture.
 
-| Role        | Hardware                           |
-|-------------|------------------------------------|
-| Main device | pi 4                               |
-| One unit    | pi zero wifi, 56 digits LED row    |
+The software collects tweets from 44 skeptical accounts linked to American conservatives lobbies. On top of the query, a list of 91 keywords are used to filter the claim research, with keywords such as "Antarctica", "IPCC" (Intergovernmental Panel on Climate Change) or "fossil fuel". A third of the keyword list is based on research in political science focusing on the rejecting of scientific consensus on global warming by the American public and legislators (Boussalis and Coan, 2016). In the installation, the new database is automatically updated every four minutes.
+
+Following a scenario based on a time loop, the most recent 896 tweets are distributed as new inputs and spatialized in the sculpture network. Each unit then predicts, classifies and displays labels of misleading claims on the fly.
 
 ### Structure
 
-Three main modules compose the current architecture:
+Three main modules compose the current software architecture:
 
 1. `/claim_monitor`, on main device
 2. `/machine_learning`, on a network of pi zero devices
@@ -32,6 +31,13 @@ Three main modules compose the current architecture:
 The scenario and the claim monitor are connected to a mongoDB database.
 
 `start.sh` is a bash script for autorun of `claim_monitor/cl_monitor.py` on main device.
+
+| Role        | Hardware                           | Software module                |
+|-------------|------------------------------------|--------------------------------|
+| Main device | pi 4                               | claim monitor and scenario     |
+| Unit        | pi zero wifi, 56 digits LED row    | machine learning               |
+
+Communications between the main device and the units are carried out via OSC protocole.
 
 ### 1. Claim monitor
 
