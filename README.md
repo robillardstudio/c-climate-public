@@ -9,6 +9,10 @@ Critical Climate Machine (Patterns of Heat) is a research based project that qua
 
 This code has been developed by Gaëtan Robillard and Jolan Goulin, as part of the project [MediaFutures](#mediafutures) and [»The Intelligent Museum«](#the-intelligent-museum).
 
+For information on usage and redistribution, and for a DISCLAIMER OF ALL WARRANTIES, see the file, "LICENSE.txt," in this distribution.
+
+BSD Simplified License.
+
 Description
 -----------
 
