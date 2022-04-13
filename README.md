@@ -16,7 +16,7 @@ Critical Climate Machine is examining different states of digital (mis)informati
 
 The work consists of a data sculpture, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor displaying outputs on a row of 7 segments LED displays. A main device collects data from Twitter and reads and writes the data in a database (DB). This repository concerns the code for the data sculpture.
 
-The software collects tweets from 44 skeptical accounts linked to American conservatives lobbies. On top of the query, a list of 91 keywords are used to filter the claim research, with keywords such as "Antarctica", "IPCC" (Intergovernmental Panel on Climate Change) or "fossil fuel". A third of the keyword list is based on research in political science focusing on the rejecting of scientific consensus on global warming by the American public and legislators (Boussalis and Coan, 2016). In the installation, the new database is automatically updated every four minutes.
+The software collects tweets from 44 skeptical accounts linked to American conservatives lobbies (cf References). On top of the query, a list of 91 keywords are used to filter the claim research, with keywords such as "Antarctica", "IPCC" (Intergovernmental Panel on Climate Change) or "fossil fuel". A third of the keyword list is based on research in political science focusing on the rejecting of scientific consensus on global warming by the American public and legislators (Boussalis and Coan, 2016). In the installation, the new database is automatically updated every four minutes.
 
 Following a scenario based on a time loop, the most recent 896 tweets are distributed as new inputs and spatialized in the sculpture network. Each unit then predicts, classifies and displays labels of misleading claims on the fly.
 
@@ -43,7 +43,7 @@ Communications between the main device and the units are carried out via OSC pro
 
 *Runs on main device*
 
-The module watches Twitter accounts for recent tweets and saves them in the Data Base.
+The module watches Twitter accounts for recent tweets and saves them in the DB.
 
 Use `cl_monitor.py` to:
 
@@ -66,9 +66,9 @@ Warning: the text below is clearly identified in the realm of cognitive sciences
 
 ![code sheet](media/labels-caption.png)
 
-`server.launch` runs `server.py` at the unit startup. `server.py` receives data and instructions from the main device over wifi network.
+`server.launch` runs `server.py` at unit startup. `server.py` receives data and instructions from the main device over wifi network.
 
-See `ml.py` for ML inference and `model.pkl`, the trained model.
+See `ml.py` for machine learning inference and `model.pkl`, the trained model.
 
 ### 3. Scenario
 
@@ -97,13 +97,14 @@ Dependencies (python librairies)
 * pymongo
 * pymongo[srv]
 * pickle
+* pythonosc
 
 Data
 -------
 
 ### Disclaimer
 
-It was decided to publish here the traning data in csv format. The purpose is to allow the training of the model in case the `model.pkl` can't be read because of possible updates of the scikit-learn librairy. Another reason for our choice relies on the fact that the training data is entirely anonymised. Be aware the training data does not include the test set. For accessing the full dataset and learning about its method, please refer to References below. For any claim regarding the publication of the training data in the current repository, please contact gaetanrobillard.studio@gmail.com.
+It was decided to publish here a part of the traning dataset in csv format. The purpose is to allow the training of the model in case the `model.pkl` can't be read because of possible updates of the scikit-learn librairy. Another reason for our choice relies on the fact that the training data is entirely anonymised. It does not include the names of the lobies or the blogs from which the data may have been collected. Ethical aspects have been taken into account. No negative effects on people have been identified so far. Transparency is claimed as an important aspect of this publication. Be aware the training data does not include the test set. For accessing the full dataset and learning about its method, please refer to References below. For any claim regarding the publication of the training dataset in the current repository, please contact gaetanrobillard.studio@gmail.com.
 
 Path for accessing the training data : `machine_learning/dataset-training/training.csv`
 
@@ -119,6 +120,8 @@ References / Further Reading
 Critical Climate Machine [on vimeo](https://vimeo.com/667971904)
 
 Training set and analysis code is extended from article by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko, "Computer-assisted classification of contrarian claims about climate change", _Sci Rep 11_, 22320, Nature, 2021. [https://doi.org/10.1038/s41598-021-01714-4](https://doi.org/10.1038/s41598-021-01714-4)
+
+Data Ethics Canvas
 
 Tips
 -----------
