@@ -101,8 +101,6 @@ Dependencies (python librairies)
 * pickle
 * pythonosc
 
-![technical details](media/web_technical_details.jpg)
-
 Data
 -------
 
