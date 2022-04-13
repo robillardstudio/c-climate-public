@@ -17,6 +17,7 @@ Critical Climate Machine is examining different states of digital (mis)informati
 The set consists of a data sculpture, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor displaying outputs on a row of 7 segments LED displays. A main device collects data from Twitter and reads and writes the data in a Data Base. This repository concerns the code for the data sculpture.
 
 | Role        | Hardware                           |
+|-------------|------------------------------------|
 | Main device | pi 4                               |
 | One unit    | pi zero wifi, 56 digits LED row    |
 
