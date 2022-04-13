@@ -34,8 +34,8 @@ The scenario and the claim monitor are connected to a mongoDB database.
 
 | Role        | Hardware                           | Software module                |
 |-------------|------------------------------------|--------------------------------|
-| Main device | pi 4                               | claim monitor and scenario     |
-| Unit        | pi zero wifi, 56 digits LED row    | machine learning               |
+| Main device | pi 4                               | Claim monitor and Scenario     |
+| Unit        | pi zero w and 56 digits LED row    | Machine learning               |
 
 Communications between the main device and the units are carried out via OSC protocole.
 
