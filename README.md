@@ -41,8 +41,6 @@ The scenario and the claim monitor are connected to a mongoDB database.
 | Main device | pi 4                               | Claim monitor and Scenario     |
 | Unit        | pi zero w and 56 digits LED row    | Machine learning               |
 
-![technical details](media/web_technical_details.jpg)
-
 ### 1. Claim monitor
 
 *Runs on main device*
@@ -102,6 +100,8 @@ Dependencies (python librairies)
 * pymongo[srv]
 * pickle
 * pythonosc
+
+![technical details](media/web_technical_details.jpg)
 
 Data
 -------
