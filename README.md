@@ -16,13 +16,23 @@ BSD Simplified License.
 Description
 -----------
 
-Critical Climate Machine is examining different states of digital (mis)information about climate change, especially when interpreted by machine learning algorithms. The artistic project takes shape in an installation that presents processed information both in real time, through natural language processing techniques, and in the form of dialogues that were voiced, then regenerated and spatialized, with the help of algorithms designed for music analysis and improvisation.
+Critical Climate Machine is examining different states of digital (mis)information about climate change, especially when interpreted by machine learning algorithms. The artistic project takes shape in an installation that presents processed information both in real time, through natural language processing techniques, and in the form of dialogues that were voiced, then regenerated and spatialized, with the help of algorithms designed for music analysis and improvisation. Overall, the work consists of a data sculpture, a visualization and a sound installation. This repository concerns the code for the data sculpture.
 
-The work consists of a data sculpture, a visualization and a sound installation. Made with wood and copper, the data sculpture is composed by a network of thirty two units, each embedding one processor displaying outputs on a row of 7 segments LED displays. A main device collects data from Twitter and reads and writes the data in a database (DB). This repository concerns the code for the data sculpture.
+**Hardware**
 
-The software collects tweets from 44 skeptical accounts linked to American conservatives lobbies (cf References). On top of the query, a list of 91 keywords are used to filter the claim research, with keywords such as "Antarctica", "IPCC" (Intergovernmental Panel on Climate Change) or "fossil fuel". A third of the keyword list is based on research in political science focusing on the rejecting of scientific consensus on global warming by the American public and legislators (Boussalis and Coan, 2016). In the installation, the new database is automatically updated every four minutes.
+Crafted of wood and copper, the data sculpture is made up of a network of thirty-two units (by modules of 4), each housing a processor displaying outputs on a row of 7-segment LED displays. A main device collects data from Twitter and reads and writes the data in a database (DB).
+
+**Softtware**
+
+The software collects tweets from 44 skeptical accounts linked to American conservatives lobbies. On top of the query, a list of 91 keywords are used to filter the claim research, with keywords such as "Antarctica", "IPCC" (Intergovernmental Panel on Climate Change) or "fossil fuel". A third of the keyword list is based on research in political science focusing on the rejecting of scientific consensus on global warming by the American public and legislators (Boussalis and Coan, 2016). In the installation, the new database is automatically updated every four minutes.
 
 Following a scenario based on a time loop, the most recent 896 tweets are distributed as new inputs and spatialized in the sculpture network. Each unit then predicts, classifies and displays labels of misleading claims on the fly.
+
+| Role        | Hardware                           | Software module                |
+|-------------|------------------------------------|--------------------------------|
+| Main device | pi 4                               | Claim monitor and Scenario     |
+| Unit        | pi zero w and 56 digits LED row    | Machine learning               |
+| Network     | netgear router                     | ...                            |
 
 ### Structure
 
@@ -32,14 +42,9 @@ Three main modules compose the current software architecture:
 2. `/machine_learning`, on a network of pi zero devices
 3. `scenario.py`, on main device
 
-The scenario and the claim monitor are connected to a mongoDB database.
+The claim monitor and the scenario are both connected to a mongoDB database.
 
 `start.sh` is a bash script for autorun of `claim_monitor/cl_monitor.py` on main device.
-
-| Role        | Hardware                           | Software module                |
-|-------------|------------------------------------|--------------------------------|
-| Main device | pi 4                               | Claim monitor and Scenario     |
-| Unit        | pi zero w and 56 digits LED row    | Machine learning               |
 
 ### 1. Claim monitor
 
@@ -64,7 +69,7 @@ Use `cl_monitor.py` to:
 
 For every cycle of the scenario (cf Scenario), each unit receives and classifies 28 new tweets. There are 18 labels ranging from 0 to 17.
 
-Warning: the text below is clearly identified in the realm of cognitive sciences as known misleading claims about climate change. It should be recalled here that **97% of climate experts agree humans are causing global warming.**
+Warning: the text below is clearly identified in the realm of cognitive sciences as known misleading claims about climate change. It should be recalled here that **97% of climate experts agree humans are causing global warming** (Cook et al., 2016).
 
 ![code sheet](media/labels-caption.png)
 
