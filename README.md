@@ -36,7 +36,7 @@ Following a scenario based on a time loop, the most recent 896 tweets are distri
 
 ### Structure
 
-Three main modules compose the current software architecture:
+Four main modules compose the current software architecture:
 
 1. `/claim_monitor`, on main device
 2. `/machine_learning`, on a network of pi zero devices
