@@ -22,17 +22,11 @@ Critical Climate Machine is examining different states of digital (mis)informati
 
 Crafted of wood and copper, the data sculpture is made up of a network of thirty-two units (by modules of 4), each housing a processor displaying outputs on a row of 7-segment LED displays. A main device collects data from Twitter and reads and writes the data in a database (DB).
 
-**Softtware**
+**Software**
 
 The software collects tweets from 44 skeptical accounts linked to American conservatives lobbies. On top of the query, a list of 91 keywords are used to filter the claim research, with keywords such as "Antarctica", "IPCC" (Intergovernmental Panel on Climate Change) or "fossil fuel". A third of the keyword list is based on research in political science focusing on the rejecting of scientific consensus on global warming by the American public and legislators (Boussalis and Coan, 2016). In the installation, the new database is automatically updated every four minutes.
 
 Following a scenario based on a time loop, the most recent 896 tweets are distributed as new inputs and spatialized in the sculpture network. Each unit then predicts, classifies and displays labels of misleading claims on the fly.
-
-| Role        | Hardware                           | Software module                |
-|-------------|------------------------------------|--------------------------------|
-| Main device | pi 4                               | Claim monitor and Scenario     |
-| Unit        | pi zero w and 56 digits LED row    | Machine learning               |
-| Network     | netgear router                     | ...                            |
 
 ### Structure
 
@@ -43,6 +37,12 @@ Four main modules compose the current software architecture:
 3. `scenario.py`, on main device
 
 The claim monitor and the scenario are both connected to a mongoDB database.
+
+| Role        | Hardware                           | Software module                |
+|-------------|------------------------------------|--------------------------------|
+| Main device | pi 4                               | Claim monitor and Scenario     |
+| Unit        | pi zero w and 56 digits LED row    | Machine learning               |
+| Network     | netgear router                     | ...                            |
 
 `start.sh` is a bash script for autorun of `claim_monitor/cl_monitor.py` on main device.
 
