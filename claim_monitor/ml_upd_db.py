@@ -1,9 +1,10 @@
 '''
 CCM
-Copyright (c) 2021 Gaëtan Robillard and Jolan Goulin
-BSD Simplified License.
-For information on usage and redistribution, and for a DISCLAIMER OF ALL
-WARRANTIES, see the file, "LICENSE.txt," in this distribution.
+The code below is a derivative of Cards:
+"Computer-assisted detection and classification of misinformation about climate change" 
+by Travis G. Coan, Constantine Boussalis, John Cook, and Mirjam Nanko.
+Cards is licensed under the Apache License 2.0
+For information on usage and redistribution, see <https://github.com/traviscoan/cards>
 '''
 
 # ML CLASSIFIER AND DB UPDATER
