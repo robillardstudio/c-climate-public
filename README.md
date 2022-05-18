@@ -111,17 +111,13 @@ Data
 
 ### Disclaimer
 
-It was decided to publish here part of the machine learning model training dataset. This training set originates from a large number of documents from prominent American conservative think tanks and contrarian blogs. The data consists of 23 436 paragraphs labeled by climate-literate volunteers according to five known types of misleading arguments about climate change[^1]. Ethical aspects have been taken into account. One of the reason for publishing is based on transparency. As an investigation of science, the artistic project aims to critically expose a process of computation together with its intellectual and material implications. Revealing the basis on which is grounded the production of new data and its analysis relies on an effort to exhibit processes – and aspects of natural language processing more specifically. Beforehand, excerpts from the training set were presented and discussed in an open workshop called _The Refutation Game_, where participants were encouraged to learn more about climate misinformation and rebuttal techniques.
+In order to exercise transparency we are publishing here a part of the machine learning model training dataset. This set originates from a large number of documents from prominent American conservative think tanks and contrarian blogs. The artistic project aims to critically expose a process of computation together with its intellectual and material implications. Revealing the production of new data relies on an effort to exhibit processes – and aspects of natural language processing more specifically. Previously, excerpts from the training set were presented and discussed in an open workshop called _The Refutation Game_, where participants were encouraged to learn more about climate misinformation and rebuttal techniques. The dataset in question is anonymized. From a technical point of view, sharing it enables retraining the model in the event where the model cannot be read, due to possible updates in the dependencies. To access the full training dataset and to learn more about its method, please refer to Travis G. Coan et al., in the References section below.
 
-To date, no negative impact has been identified in relation to the dissemination of the training data. The dataset in question is completely anonymized. It does not include the names of authors, lobbies or blogs from which the data may have been collected. From a technical point of view, the sharing of this dataset enables the retraining of the model, in the event that the provided model cannot be read, due to possible updates in the dependencies of the software. Please note that here the training data does not include the test set. To access the full training dataset and learn more about its method, please refer to Travis G. Coan et al., in the References section below.
-
-For any claim regarding the publication of the training dataset in the current repository, please contact gaetanrobillard.studio@gmail.com.
+For any remarks regarding the publication, please contact gaetanrobillard.studio@gmail.com.
 
 Path for accessing the training data : `machine_learning/dataset-training/training.csv`
 
 To train the model and export new `.pkl` file, use `trainExportModel.py`.
-
-[^1]: The five top categories of the training set: 1) it’s not happening, 2) it’s not us, 3) it’s not bad, 4) solutions won’t work, 5) climate science is unreliable. For a full list of categories, please refer to Travis G. Coan et al. (Figure 1, sub-claims level).
 
 ### Note
 
