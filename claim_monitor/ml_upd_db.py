@@ -9,7 +9,6 @@ For information on usage and redistribution, see <https://github.com/traviscoan/
 
 # ML CLASSIFIER AND DB UPDATER
 # ----------------------------------------------------------------------
-
 import subprocess
 from sklearn import preprocessing
 from sklearn.feature_extraction.text import TfidfVectorizer
