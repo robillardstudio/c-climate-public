@@ -24,7 +24,6 @@ nTweets = 400 # Limit for the number of collected tweets
 
 # Import model
 # ------------------------------------------------------------------------------
-# To import CARDS model use : with open('CARDS_Logistic_Classifier.pkl', 'rb') as f:
 with open("data/model.pkl", 'rb') as f:
     logit = pickle.load(f)
 
