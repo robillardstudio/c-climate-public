@@ -105,6 +105,7 @@ Dependencies (python librairies)
 * pymongo[srv]
 * pickle
 * pythonosc
+* requests
 
 Data
 -------
